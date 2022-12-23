@@ -1,4 +1,23 @@
 @charset "UTF-8";
+.container {
+  max-width: 1245px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  max-width: 1424px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
 /***
     The new CSS reset - version 1.8.2 (last updated 23.12.2022)
     GitHub page: https://github.com/elad2412/the-new-css-reset

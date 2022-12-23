@@ -2,11 +2,9 @@
 @import
   'abstracts/variables',
   'abstracts/mixins',
-  'abstracts/placeholders';
+  'abstracts/helpers';
 
 // 2. Vendors
-
-
 
 // 3. Base stuff
 @import 
@@ -22,6 +20,16 @@
 
 
 // 5. Components
+@import
+  'components/button-main',
+  'components/search-input',
+  'components/language-dropdown',
+  'components/tag',
+  'components/slide-recipe',
+  'components/production-item',
+  'components/production-main',
+  'components/button-footer',
+  'components/social-icon';
 
 // 6. Page-specific styles
 
