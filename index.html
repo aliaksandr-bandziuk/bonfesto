@@ -182,17 +182,18 @@
         <div class="production__wrapper">
           <a href="#">
             <div class="main-product">
-              <img class="b-rad" src="assets/img/product-1.jpg" alt="Новинка">
+              <img class="main-product__img b-rad" src="assets/img/product-1.jpg" alt="Новинка">
               <img src="assets/img/vege.png" alt="" class="note note-1">
               <img src="assets/img/new.png" alt="" class="note note-2">
               <img src="assets/img/light.png" alt="" class="note note-3">
               <img src="assets/img/top.png" alt="" class="note note-4">
               <img src="assets/img/high.png" alt="" class="note note-5">
+              <p class="main-product__title">Новинка!</p>
             </div>
           </a>
           <div class="other-products">
             <div class="products">
-              <a href="#">
+              <a class="product-link" href="#">
                 <div class="little-product">
                   <div class="little-product__img">
                     <img class="b-rad" src="assets/img/product-2.jpg" alt="Продукт">
@@ -203,7 +204,7 @@
                   </div>
                 </div>
               </a>
-              <a href="#">
+              <a class="product-link" href="#">
                 <div class="little-product">
                   <div class="little-product__img">
                     <img class="b-rad" src="assets/img/product-3.jpg" alt="Продукт">
@@ -220,11 +221,49 @@
             </div>
           </div>
         </div>
+        <button class="button-main d-none-little">Вся продукция</button>
+      </div>
+    </section>
+    <section class="best">
+      <div class="container-left">
+        <div class="best__wrapper">
+          <div class="info">
+            <h2 class="h2">Лучшие рецепты с сезонными овощами и фруктами</h2>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            </p>
+            <button class="button-main">Подробнее</button>
+          </div>
+          <div class="preview">
+            <img class="preview__img" src="assets/img/best-recipe.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery">
+      <!-- Slider main container -->
+      <div class="swiper swiper-gallery">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper gallery-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide swiper-gallery__slide">
+            <img src="/assets/img/gallery-1.jpg" alt="Галерея продукции Bonfesto">
+          </div>
+          <div class="swiper-slide swiper-gallery__slide">
+            <img src="/assets/img/gallery-2.jpg" alt="Галерея продукции Bonfesto">
+          </div>
+          <div class="swiper-slide swiper-gallery__slide">
+            <img src="/assets/img/gallery-3.jpg" alt="Галерея продукции Bonfesto">
+          </div>
+          <div class="swiper-slide swiper-gallery__slide">
+            <img src="/assets/img/gallery-4.jpg" alt="Галерея продукции Bonfesto">
+          </div>
       </div>
     </section>
   </main>
   <footer class="footer"></footer>
   <script src="scripts/tags.js"></script>
   <script src="scripts/swiper-recipes.js"></script>
+  <script src="scripts/swiper-gallery.js"></script>
 </body>
 </html>

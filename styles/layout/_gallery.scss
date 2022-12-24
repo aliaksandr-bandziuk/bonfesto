@@ -1,0 +1,24 @@
+.gallery {
+  margin-top: clamp(3.125rem, 0.852rem + 9.7vw, 8.125rem);
+  margin-bottom: clamp(3.75rem, -0.227rem + 16.97vw, 12.5rem);
+}
+.swiper {
+}
+.swiper-gallery {
+
+		// .swiper-gallery__slide
+
+		&__slide {
+		}
+}
+
+.gallery-wrapper {
+  display: flex;
+  align-items: baseline;
+}
+
+.swiper-wrapper {
+
+}
+.swiper-slide {
+}
