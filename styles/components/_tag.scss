@@ -1,0 +1,17 @@
+.tag {
+  border: 2px solid $color-green;
+  border-radius: 50px;
+  color: $color-green;
+  font-size: clamp(0.75rem, 0.682rem + 0.34vw, 0.938rem);
+  line-height: 120%;
+  padding-top: clamp(0.813rem, 0.631rem + 0.91vw, 1.313rem);
+  padding-bottom: clamp(0.813rem, 0.631rem + 0.91vw, 1.313rem);
+  padding-left: clamp(0.875rem, 0.511rem + 1.82vw, 1.875rem);
+  padding-right: clamp(0.875rem, 0.511rem + 1.82vw, 1.875rem);
+  white-space: nowrap;
+  transition: all ease-in-out .2s;
+}
+
+.tag:hover, .tag:focus, .tag:active {
+  @include change-style;
+}

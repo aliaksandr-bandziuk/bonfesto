@@ -1,0 +1,28 @@
+.promo {
+  background-image: 
+    linear-gradient(to bottom, rgba(46, 41, 35, 0.2), rgba(46, 41, 35, 0.2)),
+    url("../../assets/img/main-banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-block {
+  width: clamp(19.563rem, 11.125rem + 36vw, 38.125rem);
+  display: flex;
+  justify-content: flex-end;
+  padding-top: clamp(14.375rem, 11.307rem + 13.09vw, 21.125rem);
+  padding-bottom: clamp(2.625rem, 1.602rem + 4.36vw, 4.875rem);
+}
+
+.header {
+  font-family: 'ITC Klepto Pro';
+  font-size: clamp(3rem, 1.636rem + 5.82vw, 6rem);
+  line-height: 83%;
+  color: $color-white;
+
+		// .header__highlight
+
+		&__highlight {
+		}
+}
