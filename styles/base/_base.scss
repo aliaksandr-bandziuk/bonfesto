@@ -13,7 +13,26 @@ img {
   max-width: 100%;
 }
 
-section:not(.promo, .tags) {
-  max-width: 1140px;
-  margin: 0 auto;
+// section:not(.promo, .tags) {
+//   max-width: 1140px;
+//   margin: 0 auto;
+// }
+
+.h2 {
+  font-weight: 800;
+  font-size: clamp(1.5rem, 1.159rem + 1.45vw, 2.25rem);
+  line-height: 125%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: $color-title;
+  margin-bottom: clamp(0.938rem, 0.653rem + 1.21vw, 1.563rem);
+}
+
+.description {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(0.875rem, 0.705rem + 0.73vw, 1.25rem);
+  line-height: clamp(1.063rem, 0.864rem + 0.85vw, 1.5rem);
+  color: $color-black;
 }
