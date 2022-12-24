@@ -1,0 +1,23 @@
+.production {
+  padding-top: clamp(1.875rem, 0.881rem + 4.24vw, 4.063rem);
+  padding-bottom: clamp(2.188rem, 1.335rem + 3.64vw, 4.063rem);
+
+  // .production__wrapper
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+}
+.main-product {
+}
+.other-products {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.products {
+  display: flex;
+  gap: 40px;
+}

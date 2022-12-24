@@ -1,11 +1,9 @@
 .tags {
   padding-top: clamp(1.25rem, 0.398rem + 3.64vw, 3.125rem);
   padding-bottom: clamp(1.875rem, 1.023rem + 3.64vw, 3.75rem);
-  padding-top: clamp(1.25rem, 0.568rem + 3.41vw, 3.125rem);
-  padding-bottom: clamp(1.875rem, 1.193rem + 3.41vw, 3.75rem);
 
   &__wrapper {
-    margin-left: clamp(0.938rem, -1.563rem + 10.67vw, 6.438rem);
+    // margin-left: clamp(0.938rem, -1.563rem + 10.67vw, 6.438rem);
     position: relative;
   }
   

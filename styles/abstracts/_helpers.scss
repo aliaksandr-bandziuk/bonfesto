@@ -5,6 +5,15 @@
   margin: 0 auto;
 }
 
+.container-left {
+  padding-left: clamp(0.938rem, -1.563rem + 10.67vw, 6.438rem);
+}
+
+.container-total {
+  padding-left: clamp(0.938rem, -1.563rem + 10.67vw, 6.438rem);
+  padding-right: clamp(0.938rem, -1.563rem + 10.67vw, 6.438rem);
+}
+
 .container-flex {
   display: flex;
   justify-content: end;
@@ -12,4 +21,16 @@
   @media (max-width: 480px) {
     justify-content: start;
   }
+}
+
+.d-none {
+  display: none;
+
+  @media (max-width: 980px) {
+    display: block;
+  }
+}
+
+.b-rad {
+  border-radius: 30px;
 }

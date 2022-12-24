@@ -1,0 +1,19 @@
+.button-main {
+  background-color: $color-green;
+  color: $color-white;
+  border-radius: 50px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(0.75rem, 0.58rem + 0.73vw, 1.125rem);
+  line-height: 120%;
+  padding-top: clamp(0.813rem, 0.585rem + 0.97vw, 1.313rem);
+  padding-bottom: clamp(0.813rem, 0.585rem + 0.97vw, 1.313rem);
+  padding-left: clamp(1.5rem, 1.273rem + 0.97vw, 2rem);
+  padding-right: clamp(1.5rem, 1.273rem + 0.97vw, 2rem);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

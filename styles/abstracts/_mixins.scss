@@ -2,3 +2,10 @@
   color: $color-white;
   background-color: $color-green;
 }
+
+@mixin tip {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 10px;
+}

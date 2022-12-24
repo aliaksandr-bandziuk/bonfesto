@@ -13,11 +13,6 @@ img {
   max-width: 100%;
 }
 
-// section:not(.promo, .tags) {
-//   max-width: 1140px;
-//   margin: 0 auto;
-// }
-
 .h2 {
   font-weight: 800;
   font-size: clamp(1.5rem, 1.159rem + 1.45vw, 2.25rem);
@@ -35,4 +30,5 @@ img {
   font-size: clamp(0.875rem, 0.705rem + 0.73vw, 1.25rem);
   line-height: clamp(1.063rem, 0.864rem + 0.85vw, 1.5rem);
   color: $color-black;
+  margin-bottom: 25px;
 }
