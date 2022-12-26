@@ -19,6 +19,7 @@
   &__image {
     transition: all ease-in-out .2s;
     margin-bottom: clamp(0.938rem, 0.511rem + 1.82vw, 1.875rem);
+    overflow: hidden;
     
     img {
       border-radius: 30px;

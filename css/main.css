@@ -85,6 +85,7 @@ img {
 }
 
 .h2 {
+  font-family: "Circe", sans-serif;
   font-weight: 800;
   font-size: clamp(1.5rem, 1.159rem + 1.45vw, 2.25rem);
   line-height: 125%;
@@ -207,21 +208,21 @@ pre {
 }
 @font-face {
   font-family: "ITC Klepto Pro";
-  src: url("../assets/fonts/itc/itckleptopro-regular.woff2") format("woff2"), url("../assets/fonts/itc/itckleptopro-regular.woff") format("woff"), url("../assets/fonts/itc/ITCKLEPTOPRO-REGULAR.OTF") format("otf");
+  src: url("../assets/fonts/itc/klepto_itc_tt.otf") format("otf"), url("../assets/fonts/itc/klepto_itc_tt.woff") format("woff"), url("../assets/fonts/itc/klepto_itc_tt.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Circe";
-  src: url("../assets/fonts/circe/circe-extrabold.woff2") format("woff2"), url("../assets/fonts/circe/circe-extrabold.woff") format("woff"), url("../assets/fonts/circe/CIRCE-EXTRABOLD.TTF") format("truetype");
+  src: url("../assets/fonts/circe/CIRCE-EXTRABOLD.TTF") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("../assets/fonts/open_sans/opensans-variablefont_wdthwght.woff2") format("woff2"), url("../assets/fonts/open_sans/opensans-variablefont_wdthwght.woff") format("woff"), url("../assets/fonts/open_sans/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
+  src: url("../assets/fonts/open_sans/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -452,11 +453,8 @@ pre {
   padding-bottom: clamp(2.625rem, 1.602rem + 4.36vw, 4.875rem);
 }
 
-h1 {
-  font-family: "Roboto";
-}
-
 .main-title {
+  font-family: "Circe";
   font-size: clamp(3rem, 1.636rem + 5.82vw, 6rem);
   line-height: 83%;
   color: #ffffff;
@@ -560,7 +558,7 @@ h1 {
 .recipe-button-prev {
   position: absolute;
   bottom: 110px;
-  left: 250px;
+  left: 200px;
   cursor: pointer;
 }
 @media (max-width: 1100px) {
@@ -963,6 +961,7 @@ h1 {
   display: flex;
   gap: 12px;
   align-items: center;
+  font-family: "Open Sans" sans-serif;
 }
 .dev-info p {
   color: #A69389;
@@ -1182,6 +1181,7 @@ ul li ul li {
 .recipe__image {
   transition: all ease-in-out 0.2s;
   margin-bottom: clamp(0.938rem, 0.511rem + 1.82vw, 1.875rem);
+  overflow: hidden;
 }
 .recipe__image img {
   border-radius: 30px;
