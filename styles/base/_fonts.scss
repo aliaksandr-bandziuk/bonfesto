@@ -1,16 +1,8 @@
 @font-face {
   font-family: "Montserrat";
-  src: url("../../assets/fonts/montserrat/montserrat-variablefont_wght.woff2") format("woff2"),
-  url("../../assets/fonts/montserrat/montserrat-variablefont_wght.woff") format("woff"),
-  url("../../assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "ITC Klepto Pro";
-  src: url("../../assets/fonts/itc/klepto_itc_tt.ttf") format("truetype");
+  src: url("../assets/fonts/montserrat/montserrat-variablefont_wght.woff2") format("woff2"),
+  url("../assets/fonts/montserrat/montserrat-variablefont_wght.woff") format("woff"),
+  url("../assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -18,19 +10,27 @@
 
 // @font-face {
 //   font-family: "ITC Klepto Pro";
-//   src: url("../../assets/fonts/itc/itckleptopro-regular.woff2") format("woff2"),
-//   url("../../assets/fonts/itc/itckleptopro-regular.woff") format("woff"),
-//   url("../../assets/fonts/itc/ITCKLEPTOPRO-REGULAR.OTF") format("otf");
+//   src: url("../assets/fonts/itc/klepto_itc_tt.ttf") format("truetype");
 //   font-weight: normal;
 //   font-style: normal;
 //   font-display: swap;
 // }
 
 @font-face {
+  font-family: "ITC Klepto Pro";
+  src: url("../assets/fonts/itc/itckleptopro-regular.woff2") format("woff2"),
+  url("../assets/fonts/itc/itckleptopro-regular.woff") format("woff"),
+  url("../assets/fonts/itc/ITCKLEPTOPRO-REGULAR.OTF") format("otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Circe";
-  src: url("../../assets/fonts/circe/circe-extrabold.woff2") format("woff2"),
-  url("../../assets/fonts/circe/circe-extrabold.woff") format("woff"),
-  url("../../assets/fonts/circe/CIRCE-EXTRABOLD.TTF") format("truetype");
+  src: url("../assets/fonts/circe/circe-extrabold.woff2") format("woff2"),
+  url("../assets/fonts/circe/circe-extrabold.woff") format("woff"),
+  url("../assets/fonts/circe/CIRCE-EXTRABOLD.TTF") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -38,9 +38,9 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../../assets/fonts/open_sans/opensans-variablefont_wdthwght.woff2") format("woff2"),
-  url("../../assets/fonts/open_sans/opensans-variablefont_wdthwght.woff") format("woff"),
-  url("../../assets/fonts/open_sans/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
+  src: url("../assets/fonts/open_sans/opensans-variablefont_wdthwght.woff2") format("woff2"),
+  url("../assets/fonts/open_sans/opensans-variablefont_wdthwght.woff") format("woff"),
+  url("../assets/fonts/open_sans/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;

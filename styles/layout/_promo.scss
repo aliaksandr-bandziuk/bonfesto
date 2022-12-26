@@ -16,8 +16,12 @@
   padding-bottom: clamp(2.625rem, 1.602rem + 4.36vw, 4.875rem);
 }
 
+h1 {
+  font-family: 'Roboto';
+}
+
 .main-title {
-  font-family: 'ITC Klepto Pro';
+  // font-family: 'Circe';
   font-size: clamp(3rem, 1.636rem + 5.82vw, 6rem);
   line-height: 83%;
   color: $color-white;
