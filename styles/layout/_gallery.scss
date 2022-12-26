@@ -1,6 +1,6 @@
 .gallery {
   margin-top: clamp(3.125rem, 0.852rem + 9.7vw, 8.125rem);
-  margin-bottom: clamp(3.75rem, -0.227rem + 16.97vw, 12.5rem);
+  margin-bottom: clamp(3.75rem, 2.159rem + 7.95vw, 8.125rem);
 }
 .swiper {
 }
@@ -21,4 +21,18 @@
 
 }
 .swiper-slide {
+
+  &:nth-child(odd) {
+    aspect-ratio: 450 / 393;
+  }
+
+  &:nth-child(even) {
+    aspect-ratio: 255 / 292;
+  }
+
+  img {
+    // aspect-ratio: 1 / 1;
+    border-radius: 30px;
+    object-fit: cover;
+  }
 }

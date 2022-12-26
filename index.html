@@ -14,17 +14,67 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
-  <header class="header"></header>
+  <header class="header" id="header">
+    <nav class="navbar container">
+       <a href="#" class="brand">
+        <img src="assets/img/logo.svg" alt="">
+       </a>
+       <div class="burger" id="burger">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+       </div>
+       <div class="menu" id="menu">
+          <div class="menu-mobile">
+            <div class="menu-mobile__logo">
+              <img src="/assets/img/logo.svg" alt="">
+            </div>
+            <div class="menu-mobile__langs">
+              <a href="#" class="lang__link">RU</a>
+              <p>|</p>
+              <a href="#" class="lang__link lang__link--unactive">EN</a>
+            </div>
+          </div>
+          <div class="mobile-line"></div>
+          <ul class="menu-inner">
+            <li class="menu-item"><a href="#" class="menu-link">Рецепты</a></li>
+             <li class="menu-item"><a href="#" class="menu-link dropdown-nav">Продукция</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Bonfesto Coocing</a></li>
+          </ul>
+          <div class="mobile-buttons">
+            <a href="#" class="connect-link">Связаться с нами</a>
+          </div>
+       </div>
+       <div class="menu-search search" id="search">
+        <input class="search__input" type="search" name="" id="" placeholder="Поиск">
+        <svg class="search__icon" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M6.30008 1.40002C3.59385 1.40002 1.40002 3.59385 1.40002 6.30008C1.40002 9.00631 3.59385 11.2001 6.30008 11.2001C9.00631 11.2001 11.2001 9.00631 11.2001 6.30008C11.2001 3.59385 9.00631 1.40002 6.30008 1.40002ZM0 6.30008C0 2.82064 2.82064 0 6.30008 0C9.77952 0 12.6002 2.82064 12.6002 6.30008C12.6002 9.77952 9.77952 12.6002 6.30008 12.6002C2.82064 12.6002 0 9.77952 0 6.30008Z" fill="#A69389"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M9.76167 9.75996C10.035 9.48659 10.4783 9.48659 10.7516 9.75996L13.7967 12.805C14.07 13.0784 14.07 13.5216 13.7967 13.795C13.5233 14.0683 13.0801 14.0683 12.8067 13.795L9.76167 10.7499C9.4883 10.4766 9.4883 10.0333 9.76167 9.75996Z" fill="#A69389"/>
+        </svg>        
+       </div>
+       <div class="dropdown">
+        <div class="dropbtn">
+          <p>RU</p>
+          <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1.5L6 6.5L11 1.5" stroke="#A69389" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="dropdown-content">
+          <a href="#">EN</a>
+        </div>
+      </div>
+    </nav>
+  </header>
   <main class="main">
     <section class="promo">
       <div class="container container-flex">
-        <div class="header-block">
-          <h1 class="header">Готовь <br> по-итальянски c Bonfesto</h1>
+        <div class="title-container">
+          <h1 class="main-title">Готовь <br> по-итальянски c Bonfesto</h1>
         </div>
       </div>
     </section>
     <section class="tags">
-      <div class="container-left">
+      <div class="container-content">
         <div class="tags__wrapper">
           <div class="tags-scroller">
             <div class="tags-scroller__content">
@@ -77,7 +127,7 @@
       </div>
     </section>
     <section class="recipes">
-      <div class="container-left">
+      <div class="container-content">
         <div class="recipes__wrapper">
           <div class="recipes__content">
             <h2 class="h2">Только проверенные рецепты</h2>
@@ -177,67 +227,73 @@
       <!-- <button href="#" class="button-main">Все рецепты</button> -->
     </section>
     <section class="production">
-      <div class="container-total">
+      <div class="container">
         <h2 class="h2">Продукция</h2>
         <div class="production__wrapper">
-          <a href="#">
-            <div class="main-product">
-              <img class="main-product__img b-rad" src="assets/img/product-1.jpg" alt="Новинка">
-              <img src="assets/img/vege.png" alt="" class="note note-1">
-              <img src="assets/img/new.png" alt="" class="note note-2">
-              <img src="assets/img/light.png" alt="" class="note note-3">
-              <img src="assets/img/top.png" alt="" class="note note-4">
-              <img src="assets/img/high.png" alt="" class="note note-5">
-              <p class="main-product__title">Новинка!</p>
-            </div>
-          </a>
-          <div class="other-products">
-            <div class="products">
-              <a class="product-link" href="#">
-                <div class="little-product">
-                  <div class="little-product__img">
-                    <img class="b-rad" src="assets/img/product-2.jpg" alt="Продукт">
-                  </div>
-                  <div class="little-product__content">
-                    <p class="product-subtitle">Пробуй по-новому!</p>
-                    <h3 class="product-title">ricotta <span>light</span></h3>
-                  </div>
+          <div class="product-main">
+            <a href="#">
+              <div class="product-main__wrapper">
+                <div class="product-main__container">
+                  <img class="main-product__img b-rad" src="assets/img/product-1.jpg" alt="Новинка">
                 </div>
-              </a>
-              <a class="product-link" href="#">
-                <div class="little-product">
-                  <div class="little-product__img">
-                    <img class="b-rad" src="assets/img/product-3.jpg" alt="Продукт">
-                  </div>
-                  <div class="little-product__content">
-                    <p class="product-subtitle">Пробуй по-новому!</p>
-                    <h3 class="product-title">Mozzarella <span>mini 11 шариков</span></h3>
-                  </div>
+                <div class="product__content d-none-little">
+                  <h3 class="product__title">Новинка!</h3>
                 </div>
-              </a>
-            </div>
-            <div class="product-button">
-              <button class="button-main">Вся продукция</button>
-            </div>
+              </div>
+            </a>
+            <img src="assets/img/vege.png" alt="" class="note note-1">
+            <img src="assets/img/new.png" alt="" class="note note-2">
+            <img src="assets/img/light.png" alt="" class="note note-3">
+            <img src="assets/img/top.png" alt="" class="note note-4">
+            <img src="assets/img/high.png" alt="" class="note note-5">
+          </div>
+          <div class="product-little-1 product-little">
+            <a href="#" class="product__link">
+              <div class="product">
+                <div class="product__visual">
+                  <img class="product__img b-rad" src="assets/img/product-2.jpg" alt="">
+                  <p class="product__subtitle">Пробуй по-новому!</p>
+                </div>
+                <div class="product__content">
+                  <h3 class="product__title">ricotta <span>light</span></h3>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="product-little-2 product-little">
+            <a href="#" class="product__link">
+              <div class="product">
+                <div class="product__visual">
+                  <img class="product__img b-rad" src="assets/img/product-3.jpg" alt="">
+                  <p class="product__subtitle">Пробуй по-новому!</p>
+                </div>
+                <div class="product__content">
+                  <h3 class="product__title">Mozzarella <span>mini 11 шариков</span></h3>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="product-button">
+            <button class="button-main">Вся продукция</button>
           </div>
         </div>
-        <button class="button-main d-none-little">Вся продукция</button>
       </div>
     </section>
     <section class="best">
-      <div class="container-left">
-        <div class="best__wrapper">
+      <div class="best__content">
+        <div class="best__container">
           <div class="info">
             <h2 class="h2">Лучшие рецепты с сезонными овощами и фруктами</h2>
-            <p class="description">
+            <p class="description description-best">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
             </p>
             <button class="button-main">Подробнее</button>
           </div>
-          <div class="preview">
-            <img class="preview__img" src="assets/img/best-recipe.png" alt="">
-          </div>
         </div>
+      </div>
+      <div class="best__image">
+        <img src="assets/img/best-recipe.jpg" alt="">
       </div>
     </section>
     <section class="gallery">
@@ -261,7 +317,76 @@
       </div>
     </section>
   </main>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <img class="footer-img-absolute-1" src="assets/img/footer-img-1.png" alt="">
+    <img class="footer-img-absolute-2" src="assets/img/footer-img-2.png" alt="">
+    <div class="footer-top">
+      <div class="footer-top__wrapper">
+        <div class="buttons buttons-logo">
+          <a href="#">
+            <img src="assets/img/footer-logo.png" alt="">
+          </a>
+        </div>
+        <div class="buttons buttons-social">
+          <div class="buttons-social__wrapper">
+            <div class="buttons-social__text">
+              <p>Дружить с нами:</p>
+            </div>
+            <div class="buttons-social__icons">
+              <a href="#" class="social-link">
+                <div class="">
+                  <img src="assets/img/social-1.png" alt="">
+                </div>
+              </a>
+              <a href="#" class="social-link">
+                <div class="">
+                  <img src="assets/img/social-2.png" alt="">
+                </div>
+              </a>
+              <a href="#" class="social-link">
+                <div class="">
+                  <img src="assets/img/social-3.png" alt="">
+                </div>
+              </a>
+              <a href="#" class="social-link">
+                <div class="">
+                  <img src="assets/img/social-4.png" alt="">
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="buttons buttons-button">
+          <a href="#" class="connect-link">Связаться с нами</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom__wrapper">
+          <div class="footer-bottom__item">
+            <p class="copyright">
+              © 2022 ОАО «Туровский молочный комбинат» <a class="main-link" href="#">turovmilk.by</a>
+            </p>
+          </div>
+          <div class="footer-bottom__item">
+            <div class="dev-info">
+              <p class="def-info__text">Разработка сайта</p>
+              <img class="def-info__img" src="assets/img/dev-logo.png" alt="">
+            </div>
+          </div>
+          <div class="footer-bottom__item">
+            <div class="item-links">
+              <a href="#">Политика обработки данных</a>
+              <p class="slash">|</p>
+              <a href="#">Политика конфиденциальности</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts/header.js"></script>
   <script src="scripts/tags.js"></script>
   <script src="scripts/swiper-recipes.js"></script>
   <script src="scripts/swiper-gallery.js"></script>

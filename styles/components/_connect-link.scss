@@ -1,0 +1,16 @@
+.connect-link {
+  display: inline-block;
+  border: 2px solid #968780;
+  border-radius: 50px;
+  padding: 14px 20px;
+  font-weight: 500;
+  font-size: clamp(0.75rem, 0.682rem + 0.34vw, 0.938rem);
+  line-height: 155%;
+  color: #968780;
+  transition: all ease-in-out .2s;
+
+  &:hover {
+     color: $color-white;
+     background-color: #968780;
+  }
+}

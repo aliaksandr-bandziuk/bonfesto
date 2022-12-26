@@ -1,5 +1,6 @@
 .little-product {
-  max-width: 298px;
+  // max-width: 298px;
+  margin-bottom: 10px;
 
   @media (max-width: 980px) {
     width: 164px;
@@ -8,15 +9,14 @@
   // .little-product__img
 
   &__img {
-    margin-bottom: clamp(0.938rem, 0.511rem + 1.82vw, 1.875rem);
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 289 / 330;
     img {
       @media (max-width: 980px) {
         width: 164px;
       }
-      // object-fit: contain;
-      // max-width: 298px;
-      // aspect-ratio: 1 / 1;
+      @media (max-width: 420px) {
+        aspect-ratio: 164 / 183;
+      }
     }
   }
 
