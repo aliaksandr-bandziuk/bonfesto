@@ -1177,7 +1177,7 @@ ul li ul li {
   transform: scale(1.1);
 }
 .recipe:hover .recipe-title span {
-  font-weight: 600;
+  text-shadow: 0 0 0.15px #7EBB00, 0 0 0.15px #7EBB00;
 }
 .recipe__image {
   transition: all ease-in-out 0.2s;
@@ -1227,11 +1227,11 @@ ul li ul li {
   font-weight: 400;
   font-size: clamp(0.938rem, 0.682rem + 1.09vw, 1.5rem);
   line-height: clamp(1.188rem, 0.903rem + 1.21vw, 1.813rem);
+  transition: all ease-in 0.2s;
 }
 .recipe-title span {
   color: #7EBB00;
   text-transform: uppercase;
-  transition: all ease-in 0.2s;
 }
 
 .time {
