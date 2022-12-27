@@ -19,10 +19,10 @@ document.querySelectorAll(".menu-link").forEach((link) => {
 });
 
 // Change Header Background on Scrolling
-window.addEventListener("scroll", () => {
-   if (this.scrollY >= 85) {
-      headerMenu.classList.add("on-scroll");
-   } else {
-      headerMenu.classList.remove("on-scroll");
-   }
-});
+// window.addEventListener("scroll", () => {
+//    if (this.scrollY >= 85) {
+//       headerMenu.classList.add("on-scroll");
+//    } else {
+//       headerMenu.classList.remove("on-scroll");
+//    }
+// });
