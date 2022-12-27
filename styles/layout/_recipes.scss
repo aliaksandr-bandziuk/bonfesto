@@ -24,6 +24,10 @@
     left: 210px;
   }
 
+  @media (max-width: 1050px) {
+    left: 180px;
+  }
+
   @media (max-width: 980px) {
     display: none;
   }

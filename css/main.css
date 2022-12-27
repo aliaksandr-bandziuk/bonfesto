@@ -587,6 +587,11 @@ pre {
     left: 210px;
   }
 }
+@media (max-width: 1050px) {
+  .recipe-button-prev {
+    left: 180px;
+  }
+}
 @media (max-width: 980px) {
   .recipe-button-prev {
     display: none;
