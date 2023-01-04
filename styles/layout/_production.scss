@@ -2,6 +2,10 @@
   // padding-top: clamp(1.875rem, 0.881rem + 4.24vw, 4.063rem);
   // padding-bottom: clamp(2.188rem, 1.335rem + 3.64vw, 4.063rem);
   margin-bottom: clamp(1.875rem, -0.359rem + 9.53vw, 8.125rem);
+
+  @media (max-width: 485px) {
+    padding-top: 30px;
+  }
 }
 
 .production__wrapper {  display: grid;

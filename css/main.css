@@ -574,6 +574,11 @@ pre {
 .recipes {
   margin-bottom: clamp(1.875rem, -0.516rem + 10.2vw, 8.563rem);
 }
+@media (max-width: 485px) {
+  .recipes {
+    padding-top: 30px;
+  }
+}
 
 .recipes__wrapper {
   display: flex;
@@ -616,6 +621,11 @@ pre {
 
 .production {
   margin-bottom: clamp(1.875rem, -0.359rem + 9.53vw, 8.125rem);
+}
+@media (max-width: 485px) {
+  .production {
+    padding-top: 30px;
+  }
 }
 
 .production__wrapper {
