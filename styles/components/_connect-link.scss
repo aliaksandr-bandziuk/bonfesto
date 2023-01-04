@@ -9,8 +9,23 @@
   color: #968780;
   transition: all ease-in-out .2s;
 
+  // z-index: 1;
+  position: relative;
+
   &:hover {
      color: $color-white;
      background-color: #968780;
   }
+
+  &::after {
+    content: url('../../assets/img/footer-img-2.png');
+    position: absolute;
+    top: -165px;
+    left: 50px;
+
+    @media (max-width: 1200px) {
+      display: none;
+   }
+  }
+
 }

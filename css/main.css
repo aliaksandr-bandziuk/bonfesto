@@ -19,6 +19,11 @@
   padding-left: max(15px, (100% - 1245px) / 2);
 }
 
+.container-tags {
+  padding-left: max(15px, (100% - 1245px) / 2);
+  padding-right: 15px;
+}
+
 .container-total {
   padding-left: clamp(0.938rem, -1.563rem + 10.67vw, 6.438rem);
   padding-right: clamp(0.938rem, -1.563rem + 10.67vw, 6.438rem);
@@ -222,21 +227,20 @@ pre {
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../assets/fonts/montserrat/montserrat-variablefont_wght.woff2") format("woff2"), url("../assets/fonts/montserrat/montserrat-variablefont_wght.woff") format("woff"), url("../assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  src: url("../assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "ITC Klepto Pro";
-  src: url("../assets/fonts/itc/klepto_itc_tt.otf") format("otf"), url("../assets/fonts/itc/klepto_itc_tt.woff") format("woff"), url("../assets/fonts/itc/klepto_itc_tt.ttf") format("truetype");
-  font-weight: normal;
+  font-family: "ITC Klepto";
+  src: url("../assets/fonts/itc/klepto_itc_tt.woff") format("woff"), url("../assets/fonts/itc/klepto_itc_tt.ttf") format("truetype");
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Circe";
-  src: url("../assets/fonts/circe/CIRCE-EXTRABOLD.TTF") format("truetype");
+  src: url("../../assets/fonts/circe/CIRCE-EXTRABOLD.TTF") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -304,6 +308,7 @@ pre {
   padding-left: 30px;
 }
 .menu-link {
+  font-weight: 600;
   font-size: 18px;
   line-height: 120%;
   letter-spacing: 0.01em;
@@ -311,7 +316,8 @@ pre {
   transition: all 0.3s ease;
 }
 .menu-link:hover {
-  text-shadow: 0 0 0.15px #5A4D45, 0 0 0.15px #5A4D45;
+  color: #5A4D45;
+  text-shadow: 0 0 0.001px #5A4D45, 0 0 0.001px #5A4D45;
 }
 @media only screen and (min-width: 880px) {
   .menu {
@@ -475,11 +481,16 @@ pre {
 }
 
 .main-title {
-  font-family: "Circe";
-  font-size: clamp(3rem, 1.636rem + 5.82vw, 6rem);
+  font-family: "ITC Klepto", sans-serif;
+  font-weight: 400;
+  font-size: clamp(3rem, 2.13rem + 4.35vw, 6rem);
   line-height: 83%;
   color: #ffffff;
 }
+.main-title__highlight {
+  font-family: "ITC Klepto", sans-serif;
+}
+
 .tags {
   padding-top: clamp(1.25rem, 0.398rem + 3.64vw, 3.125rem);
   padding-bottom: clamp(1.875rem, 1.023rem + 3.64vw, 3.75rem);
@@ -561,8 +572,7 @@ pre {
 }
 
 .recipes {
-  padding-top: 30px;
-  padding-bottom: clamp(1.875rem, 0.455rem + 6.06vw, 5rem);
+  margin-bottom: clamp(1.875rem, -0.516rem + 10.2vw, 8.563rem);
 }
 
 .recipes__wrapper {
@@ -570,7 +580,7 @@ pre {
   gap: 25px;
   position: relative;
 }
-@media (max-width: 980px) {
+@media (max-width: 1100px) {
   .recipes__wrapper {
     display: block;
   }
@@ -598,15 +608,14 @@ pre {
   }
 }
 
-@media (max-width: 908px) {
+@media (max-width: 980px) {
   .swiper-recipes {
     margin-bottom: 25px;
   }
 }
 
 .production {
-  padding-top: clamp(1.875rem, 0.881rem + 4.24vw, 4.063rem);
-  padding-bottom: clamp(2.188rem, 1.335rem + 3.64vw, 4.063rem);
+  margin-bottom: clamp(1.875rem, -0.359rem + 9.53vw, 8.125rem);
 }
 
 .production__wrapper {
@@ -683,6 +692,7 @@ pre {
   font-size: 12px;
   line-height: 15px;
   margin-bottom: 10px;
+  color: #000000;
 }
 @media (max-width: 485px) {
   .product__subtitle {
@@ -690,10 +700,11 @@ pre {
   }
 }
 .product__title {
-  font-weight: 600;
+  font-weight: 400;
   font-size: clamp(0.938rem, 0.682rem + 1.09vw, 1.5rem);
   line-height: clamp(1.125rem, 0.813rem + 1.33vw, 1.813rem);
   text-transform: uppercase;
+  color: #000000;
 }
 .product__title span {
   text-transform: lowercase;
@@ -805,6 +816,7 @@ pre {
 
 .best {
   overflow: hidden;
+  margin-bottom: clamp(3.125rem, 1.338rem + 7.63vw, 8.125rem);
 }
 
 @media (min-width: 767px) {
@@ -862,8 +874,7 @@ pre {
   }
 }
 .gallery {
-  margin-top: clamp(3.125rem, 0.852rem + 9.7vw, 8.125rem);
-  margin-bottom: clamp(3.75rem, 2.159rem + 7.95vw, 8.125rem);
+  margin-bottom: clamp(3.75rem, 1.739rem + 8.58vw, 9.375rem);
 }
 
 .gallery-wrapper {
@@ -911,6 +922,10 @@ pre {
   }
 }
 
+.buttons-button {
+  position: relative;
+}
+
 .buttons-social__wrapper {
   display: flex;
   flex-direction: column;
@@ -918,6 +933,7 @@ pre {
   align-items: center;
 }
 .buttons-social__text {
+  font-weight: 600;
   font-size: 16px;
   line-height: 100%;
   color: #A69389;
@@ -966,6 +982,7 @@ pre {
   }
 }
 .footer-bottom__item .copyright {
+  font-weight: 600;
   font-size: clamp(0.75rem, 0.705rem + 0.23vw, 0.875rem);
   line-height: 120%;
   color: #73655E;
@@ -1029,8 +1046,8 @@ pre {
 
 .footer-img-absolute-2 {
   position: absolute;
-  right: 17%;
-  top: -60px;
+  top: -140px;
+  left: 65px;
 }
 @media (max-width: 1200px) {
   .footer-img-absolute-2 {
@@ -1178,6 +1195,7 @@ ul li ul li {
   border: 2px solid #7EBB00;
   border-radius: 50px;
   color: #7EBB00;
+  font-weight: 600;
   font-size: clamp(0.75rem, 0.682rem + 0.34vw, 0.938rem);
   line-height: 120%;
   padding-top: clamp(0.813rem, 0.631rem + 0.91vw, 1.313rem);
@@ -1194,12 +1212,12 @@ ul li ul li {
 }
 
 .recipe {
-  max-width: 393px;
   transition: all ease-in-out 0.2s;
   overflow: hidden;
 }
 .recipe:hover img {
   transform: scale(1.1);
+  border-radius: 30px;
 }
 .recipe:hover .recipe-title span {
   text-shadow: 0 0 0.15px #7EBB00, 0 0 0.15px #7EBB00;
@@ -1208,9 +1226,9 @@ ul li ul li {
   transition: all ease-in-out 0.2s;
   margin-bottom: clamp(0.938rem, 0.511rem + 1.82vw, 1.875rem);
   overflow: hidden;
+  border-radius: 30px;
 }
 .recipe__image img {
-  border-radius: 30px;
   object-fit: contain;
   width: 100%;
   height: 100%;
@@ -1229,7 +1247,7 @@ ul li ul li {
 }
 
 .text {
-  max-width: 234px;
+  max-width: 286px;
 }
 @media (max-width: 980px) {
   .text {
@@ -1242,6 +1260,7 @@ ul li ul li {
   font-size: 12px;
   line-height: 15px;
   margin-bottom: 10px;
+  color: #000000;
 }
 @media (max-width: 485px) {
   .tip {
@@ -1253,10 +1272,11 @@ ul li ul li {
   font-weight: 400;
   font-size: clamp(0.938rem, 0.682rem + 1.09vw, 1.5rem);
   line-height: clamp(1.188rem, 0.903rem + 1.21vw, 1.813rem);
+  color: #000000;
   transition: all ease-in 0.2s;
 }
 .recipe-title span {
-  color: #7EBB00;
+  color: #A9D08C;
   text-transform: uppercase;
 }
 
@@ -1308,6 +1328,7 @@ ul li ul li {
   font-size: 12px;
   line-height: 15px;
   margin-bottom: 10px;
+  color: #000000;
 }
 @media (max-width: 485px) {
   .product-subtitle {
@@ -1316,7 +1337,7 @@ ul li ul li {
 }
 
 .product-title {
-  font-weight: 600;
+  font-weight: 400;
   font-size: clamp(0.938rem, 0.682rem + 1.09vw, 1.5rem);
   line-height: clamp(1.125rem, 0.813rem + 1.33vw, 1.813rem);
   text-transform: uppercase;
@@ -1340,8 +1361,20 @@ ul li ul li {
   line-height: 155%;
   color: #968780;
   transition: all ease-in-out 0.2s;
+  position: relative;
 }
 .connect-link:hover {
   color: #ffffff;
   background-color: #968780;
+}
+.connect-link::after {
+  content: url("../../assets/img/footer-img-2.png");
+  position: absolute;
+  top: -165px;
+  left: 50px;
+}
+@media (max-width: 1200px) {
+  .connect-link::after {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

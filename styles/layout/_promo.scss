@@ -18,13 +18,14 @@
 
 
 .main-title {
-  font-family: 'Circe';
-  font-size: clamp(3rem, 1.636rem + 5.82vw, 6rem);
+  font-family: 'ITC Klepto', sans-serif;
+  font-weight: 400;
+  font-size: clamp(3rem, 2.13rem + 4.35vw, 6rem);
   line-height: 83%;
   color: $color-white;
 
-		// .header__highlight
-
+		// .main-title__highlight
 		&__highlight {
+      font-family: 'ITC Klepto', sans-serif;
 		}
 }

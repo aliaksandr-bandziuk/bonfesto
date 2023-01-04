@@ -18,6 +18,11 @@
   padding-left: max(15px, calc((100% - 1245px) / 2));
 }
 
+.container-tags {
+  padding-left: max(15px, calc((100% - 1245px) / 2));
+  padding-right: 15px;
+}
+
 .container-total {
   padding-left: clamp(0.938rem, -1.563rem + 10.67vw, 6.438rem);
   padding-right: clamp(0.938rem, -1.563rem + 10.67vw, 6.438rem);

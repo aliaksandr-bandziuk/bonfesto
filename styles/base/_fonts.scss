@@ -1,12 +1,20 @@
 @font-face {
   font-family: "Montserrat";
-  src: url("../assets/fonts/montserrat/montserrat-variablefont_wght.woff2") format("woff2"),
-  url("../assets/fonts/montserrat/montserrat-variablefont_wght.woff") format("woff"),
-  url("../assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  src: url("../assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
+
+// @font-face {
+//   font-family: "Montserrat";
+//   src: url("../assets/fonts/montserrat/montserrat-variablefont_wght.woff2") format("woff2"),
+//   url("../assets/fonts/montserrat/montserrat-variablefont_wght.woff") format("woff"),
+//   url("../assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+//   font-weight: normal;
+//   font-style: normal;
+//   font-display: swap;
+// }
 
 // @font-face {
 //   font-family: "ITC Klepto Pro";
@@ -17,22 +25,58 @@
 // }
 
 @font-face {
-  font-family: "ITC Klepto Pro";
-  src: url("../assets/fonts/itc/klepto_itc_tt.otf") format("otf"),
-  url("../assets/fonts/itc/klepto_itc_tt.woff") format("woff"),
+  font-family: "ITC Klepto";
+  src: url("../assets/fonts/itc/klepto_itc_tt.woff") format("woff"),
   url("../assets/fonts/itc/klepto_itc_tt.ttf") format("truetype");
-  font-weight: normal;
+  // font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Circe";
-  src: url("../assets/fonts/circe/CIRCE-EXTRABOLD.TTF") format("truetype");
+  src: url("../../assets/fonts/circe/CIRCE-EXTRABOLD.TTF") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
+
+
+// @font-face {
+//   font-family: 'Circe';
+//   src: url("../") format('woff');
+//   font-style: normal;
+//   font-weight: 400;
+//   font-display: swap;
+// }
+// @font-face {
+//   font-family: 'Circe';
+//   src: url(fonts/Roboto-SemiBold.woff) format('woff');
+//   font-style: normal;
+//   font-weight: 600;
+//   font-display: swap;
+// }
+// @font-face {
+//   font-family: 'Circe';
+//   src: url(fonts/Roboto-Italic.woff) format('woff');
+//   font-style: italic;
+//   font-weight: 400;
+//   font-display: swap;
+// }
+// @font-face {
+//   font-family: 'Circe';
+//   src: url(fonts/Roboto-Bold.woff) format('woff');
+//   font-style: normal;
+//   font-weight: 700;
+//   font-display: swap;
+// }
+// @font-face {
+//   font-family: 'Circe';
+//   src: url(fonts/Roboto-BoldItalic.woff) format('woff');
+//   font-style: italic;
+//   font-weight: 700;
+//   font-display: swap;
+// }
 
 @font-face {
   font-family: "Open Sans";

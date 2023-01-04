@@ -1,6 +1,7 @@
 .production {
-  padding-top: clamp(1.875rem, 0.881rem + 4.24vw, 4.063rem);
-  padding-bottom: clamp(2.188rem, 1.335rem + 3.64vw, 4.063rem);
+  // padding-top: clamp(1.875rem, 0.881rem + 4.24vw, 4.063rem);
+  // padding-bottom: clamp(2.188rem, 1.335rem + 3.64vw, 4.063rem);
+  margin-bottom: clamp(1.875rem, -0.359rem + 9.53vw, 8.125rem);
 }
 
 .production__wrapper {  display: grid;
@@ -97,10 +98,11 @@
 
   // .product__title
   &__title {
-    font-weight: 600;
+    font-weight: 400;
     font-size: clamp(0.938rem, 0.682rem + 1.09vw, 1.5rem);
     line-height: clamp(1.125rem, 0.813rem + 1.33vw, 1.813rem);
     text-transform: uppercase;
+    color: #000000;
   
     span {
       text-transform: lowercase;
