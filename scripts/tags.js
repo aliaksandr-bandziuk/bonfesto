@@ -4,7 +4,7 @@ const navScroller = function({
   contentSelector: contentSelector = '.tags-scroller__content',
   buttonLeftSelector: buttonLeftSelector = '.tag-scroller-btn--left',
   buttonRightSelector: buttonRightSelector = '.tag-scroller-btn--right',
-  scrollStep: scrollStep = 300
+  scrollStep: scrollStep = 400
 } = {}) {
 
 let scrolling = false;
@@ -142,9 +142,11 @@ const setScrollerPosition = function() {
 const toggleButtons = function(overflow) {
   navScrollerLeft.classList.remove('active');
   navScrollerRight.classList.remove('active');
+  navScroller.classList.remove('ml-50');
 
   if (overflow === 'both' || overflow === 'left') {
     navScrollerLeft.classList.add('active');
+    navScroller.classList.add('ml-50');
   }
 
   if (overflow === 'both' || overflow === 'right') {
