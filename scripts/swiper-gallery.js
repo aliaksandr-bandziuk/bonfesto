@@ -22,7 +22,7 @@ const swiperGallery = new Swiper('.swiper-gallery', {
   loop: true,
   autoplay: {
     delay: 1,
-    disableOnInteraction: true
+    disableOnInteraction: false,
   },
   freeMode: true,
   speed: 5000,

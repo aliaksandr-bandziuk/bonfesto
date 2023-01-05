@@ -148,8 +148,9 @@ const toggleButtons = function(overflow) {
   }
 
   if (overflow === 'both' || overflow === 'right') {
-    navScrollerRight.classList.add('active');
+    navScrollerRight.classList.add('active');    
   }
+
 }
 
 
@@ -195,3 +196,4 @@ return {
 };
 
 const navScrollerTest = navScroller();
+
