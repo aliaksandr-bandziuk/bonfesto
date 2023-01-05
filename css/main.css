@@ -591,12 +591,20 @@ pre {
 
 .recipes__wrapper {
   display: flex;
-  gap: 45px;
   position: relative;
 }
 @media (max-width: 1100px) {
   .recipes__wrapper {
     display: block;
+  }
+}
+
+.recipes__content {
+  padding-right: 50px;
+}
+@media (max-width: 1100) {
+  .recipes__content {
+    padding-right: 0;
   }
 }
 
