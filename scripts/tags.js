@@ -146,7 +146,11 @@ const toggleButtons = function(overflow) {
 
   if (overflow === 'both' || overflow === 'left') {
     navScrollerLeft.classList.add('active');
-    navScroller.classList.add('ml-50');
+    // navScroller.classList.add('ml-50');
+
+    if (screen.width > 820) {
+      navScroller.classList.add('ml-50');
+    }
   }
 
   if (overflow === 'both' || overflow === 'right') {
