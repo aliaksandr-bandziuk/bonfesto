@@ -1,6 +1,8 @@
 @charset "UTF-8";
 .container {
   max-width: 1245px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 
@@ -14,11 +16,11 @@
 }
 
 .container-content {
-  padding-left: max(15px, (100% - 1245px) / 2);
+  padding-left: max(15px, (100% - 1225px) / 2);
 }
 
 .container-tags {
-  padding-left: max(15px, (100% - 1245px) / 2);
+  padding-left: max(15px, (100% - 1225px) / 2);
 }
 @media (max-width: 1330px) {
   .container-tags {
@@ -858,7 +860,7 @@ pre {
 }
 
 .best__container {
-  max-width: 1275px;
+  max-width: 1225px;
   margin: 0 auto;
   padding: 0 15px;
   display: flex;
