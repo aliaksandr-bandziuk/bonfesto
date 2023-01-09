@@ -525,6 +525,7 @@ pre {
 
 .ml-50 {
   margin-left: 50px;
+  transition: all 0.3s ease-in-out;
 }
 
 .tags-scroller__content {
@@ -535,7 +536,7 @@ pre {
   float: left;
   width: min-content;
   min-width: 100%;
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .no-transition {
@@ -600,11 +601,13 @@ pre {
 }
 
 .recipes__content {
-  padding-right: 50px;
+  padding-right: 0;
+  width: 100%;
 }
-@media (max-width: 1100) {
+@media (min-width: 1100px) {
   .recipes__content {
-    padding-right: 0;
+    width: 289px;
+    padding-right: 25px;
   }
 }
 
