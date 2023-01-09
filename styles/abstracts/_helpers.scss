@@ -1,7 +1,7 @@
 .container {
   max-width: $max-width;
-  padding-left: 15px;
-  padding-right: 15px;
+  // padding-left: 15px;
+  // padding-right: 15px;
   margin: 0 auto;
 }
 
@@ -23,8 +23,12 @@
 //   padding-right: 15px;
 // }
 
-.container__tags {
-  padding-left: max(15px, calc((100% - 1380px) / 2));
+.container-tags {
+  padding-left: max(15px, calc((100% - 1245px) / 2));
+
+  @media (max-width: 1330px) {
+    padding-left: 0;
+  }
 }
 
 .container-total {
