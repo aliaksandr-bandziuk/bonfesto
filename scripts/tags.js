@@ -83,7 +83,8 @@ const moveScroller = function(direction) {
 
   setOverflow();
 
-  let scrollDistance = scrollStep;
+  // let scrollDistance = scrollStep;
+  let scrollDistance = 200;
   let scrollAvailable;
 
 
